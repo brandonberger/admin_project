@@ -11,7 +11,7 @@
 			if (!file_exists($controllerFile)) exit; 
 			require_once $controllerFile;
 
-			$controllerClass  = new Controller\MainController;
+			$controllerClass  = new MainController;
 			
 			// Call Method
 			if(isset($action)) {

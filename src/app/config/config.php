@@ -5,7 +5,7 @@
 		// Config Constants
 		static function constants() {
 			define('HOST', 'localhost');
-			define('DATABASE', 'project1');
+			define('DATABASE', 'project_1');
 			define('USER', 'root');
 			define('PASSWORD', '');
 			define('PROJECT_PATH', '/Example_Projects/project1/src/');

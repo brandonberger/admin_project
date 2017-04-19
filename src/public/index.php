@@ -1,5 +1,7 @@
 <?php
 	namespace App;
+	require '../app/core/autoloader.php';
+	require_once '../app/config/database.php';
 	require_once '../app/config/config.php';
 	Config::constants();
 	

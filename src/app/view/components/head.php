@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> | </title>
+    <title> <?=$client->company?> </title>
 
     <!-- Bootstrap -->
     <link href="<?=PROJECT_PATH?>/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
