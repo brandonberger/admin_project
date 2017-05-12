@@ -1,6 +1,6 @@
 <?php
 	namespace App\Model;
-	class Clients extends Database {
+	class Clients extends \App\Database {
 
 		protected static $table =  'clients';
 		protected static $fields = ['id', 'company'];

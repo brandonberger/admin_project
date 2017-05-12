@@ -8,13 +8,20 @@
 			$controllerDir   = '../app/controller'.DIRECTORY_SEPARATOR;
 			$controllerFile  = $controllerDir.$controller.'.php';
 
-			if (!file_exists($controllerFile)) exit; 
+			if (file_exists($controllerFile)) {
+				//echo 'exists';
+			}
+
+			if (!file_exists($controllerFile)) exit;
+
 			require_once $controllerFile;
 
-			$controllerClass  = new MainController;
+			$controllerClass = __NAMESPACE__ . '\\' .$controllerClass;
+
+			$controllerClass = new $controllerClass;
 			
 			// Call Method
-			if(isset($action)) {
+			if(isset($action) && !empty($action)) {
 				$methodCall = $controllerClass->{$action}();
 			}
 		}

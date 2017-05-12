@@ -13,5 +13,6 @@
 			$user->getCurrentUser();
 			$client->getClient();
 			require_once '../app/view/index.php';
+
 		}
 	}
