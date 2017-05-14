@@ -8,13 +8,7 @@
 			$controllerDir   = '../app/controller'.DIRECTORY_SEPARATOR;
 			$controllerFile  = $controllerDir.$controller.'.php';
 
-			if (file_exists($controllerFile)) {
-				//echo 'exists';
-			}
-
 			if (!file_exists($controllerFile)) exit;
-
-			require_once $controllerFile;
 
 			$controllerClass = __NAMESPACE__ . '\\' .$controllerClass;
 

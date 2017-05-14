@@ -3,11 +3,8 @@
 	class Script__Controller {
 		// Dashboard 
 		public function __construct() {
-			// Default stuff 
-			// i.e :: call default view
-			require_once '../app/core/autoload_scripts.php';
-			//require_once '../app/build/scripts/hotels.php';
-			//require_once '../app/build/scripts/customers.php';
+			// These scripts pull data from messy table
+			// to be formated and inserted into a new table 
 
 			$hs = new Hotels__Script;
 			$hotels = $hs->getOrders();
