@@ -1,6 +1,6 @@
 <?php
 	namespace App;
-	class MainController {
+	class Main__Controller {
 		// Dashboard 
 		public function __construct() {
 			// Default stuff 

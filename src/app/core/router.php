@@ -4,7 +4,7 @@
 	class Router {
 
 		public function __construct($controller, $action) {
-			$controllerClass = ucfirst($controller).'Controller';
+			$controllerClass = ucfirst($controller).'__'.'Controller';
 			$controllerDir   = '../app/controller'.DIRECTORY_SEPARATOR;
 			$controllerFile  = $controllerDir.$controller.'.php';
 

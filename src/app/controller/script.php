@@ -1,18 +1,23 @@
 <?php
 	namespace App;
-	require_once '../app/build/scripts/hotels.php';
-	class ScriptController {
+	class Script__Controller {
 		// Dashboard 
 		public function __construct() {
 			// Default stuff 
 			// i.e :: call default view
-			$hs = new Hotels_Script;
+			require_once '../app/core/autoload_scripts.php';
+			//require_once '../app/build/scripts/hotels.php';
+			//require_once '../app/build/scripts/customers.php';
 
-			//var_dump($users->getCurrentUser());	
+			$hs = new Hotels__Script;
+			$hotels = $hs->getOrders();
 
-			$output = $hs->getOrders();
+			$c = new Customers__Script;
+			$customers = $c->getOrders();
 
-			//var_dump($output);
+			$p = new Prices__Script;
+			$prices = $p->getOrders();
+
 
 
 			require_once '../app/view/hotel_script_output.php';

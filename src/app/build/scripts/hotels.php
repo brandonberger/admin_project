@@ -5,7 +5,7 @@
 	//require_once '../../config/config.php';
 	//Config::constants();
 
-	class Hotels_Script extends Database {
+	class Hotels__Script extends Database {
 
 		protected static $table = 'temp_db_orders';
 		protected static $cols  = ['hotel'];
